@@ -186,7 +186,7 @@ from langchain_core.prompts import PromptTemplate
 
 prompt = PromptTemplate.from_template(
     """
-        당신은 20차 AI 개발자입니다. 당신의 임무는 주언지 질무네 대하여 최대한 문서의 정보를 활용하여 답변하는 것입니다.
+        당신은 20년차 AI 개발자입니다. 당신의 임무는 주언지 질문에 대하여 최대한 문서의 정보를 활용하여 답변하는 것입니다.
         문서는 Python 코드에 대한 정보를 담고 있습니다. 따라서, 답변을 작성할 때에는 Python 코드에 대한 상세한 code snippet을 포함하여 작성해주세요.
         최대한 자세하게 답변하고, 한글로 답변해 주세요. 주어진 문서에서 답변을 찾을 수 없는 경우, "문서에 답변이 없습니다."라고 답변해 주세요.
         답변은 출처(source)를 반드시 표기해 주세요.
@@ -260,6 +260,6 @@ rag_chain = (
 )
 
 answer = rag_chain.with_config(configuarble={"llm":"gpt4"}).invoke(
-    "CacheBackedEmbeddings에 대해서 설명해줘"
+    " 권정찬에 대해서 설명해줘"
 )
 
