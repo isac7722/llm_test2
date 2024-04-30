@@ -260,6 +260,6 @@ rag_chain = (
 )
 
 answer = rag_chain.with_config(configuarble={"llm":"gpt4"}).invoke(
-    " 권정찬에 대해서 설명해줘"
+    " RecursiveCharacterTextSplitter에 대해서 설명해줘"
 )
 
